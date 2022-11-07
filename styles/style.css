@@ -28,13 +28,13 @@ header{
     margin-bottom: 50px;
     
 }
-nav{
+nav a{
+    margin: 20px;
+    font-size: 12px;
 }
 main{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-  
-    border: 1px solid black;
     gap:15px
 }
 .para_button_section {
@@ -46,9 +46,11 @@ main{
 .para_button_section input{
     background-color: var(--softRef);
     color: #fff;
+    border: none;
+    height: 30px;
     padding: 5px;
     letter-spacing: 2px;
-    font-size: 8px;
+    font-size: 10px;
     width: 50%;
     font-weight:800;
 }
@@ -57,7 +59,8 @@ main{
     margin-bottom: 20px;
 }
 .header__section h1{
-    line-height: 20px;
+    font-size: 40px;
+    line-height: 34px;
 }
 aside{
     background-color: var(--veryDarkBlue);
