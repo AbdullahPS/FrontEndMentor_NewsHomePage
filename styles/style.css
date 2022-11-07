@@ -32,6 +32,9 @@ nav a{
     margin: 20px;
     font-size: 12px;
 }
+nav a:hover{
+    color: var(--softOrange);
+}
 main{
     display: grid;
     grid-template-columns: repeat(3,minmax(0,1fr));
@@ -99,6 +102,10 @@ aside > h1{
     font-size: 16px;
     margin-bottom: 5px;
 }
+.text h1:hover{
+    color: var(--softOrange);
+    cursor: pointer;
+}
 .text p {
     font-size: 12px;
     margin-bottom: 15px;
@@ -127,6 +134,10 @@ align-items: center;}
     font-size: 15px;
     font-weight: 800;
     margin-bottom: 10px;
+}
+.card h2:hover{
+    color: var(--softOrange);
+    cursor: pointer;
 }
 .card p {
     font-size: 12px;
