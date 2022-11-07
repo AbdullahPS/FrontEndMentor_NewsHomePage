@@ -18,7 +18,7 @@ a{
     color: gray;
 }
 body{
-    margin: 30px;
+    margin: 100px 200px;
     font-family: 'Inter', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
@@ -30,7 +30,7 @@ header{
 }
 nav a{
     margin: 20px;
-    font-size: 12px;
+    font-size: 20px;
 }
 nav a:hover{
     color: var(--softOrange);
@@ -38,7 +38,7 @@ nav a:hover{
 main{
     display: grid;
     grid-template-columns: repeat(3,minmax(0,1fr));
-    gap:15px
+    gap:50px;
 }
 .para_button_section {
     display: flex;
@@ -50,20 +50,24 @@ main{
     background-color: var(--softRef);
     color: #fff;
     border: none;
-    height: 30px;
+    height: 30%;
     padding: 5px;
     letter-spacing: 2px;
-    font-size: 10px;
+    font-size: 20px;
     width: 50%;
     font-weight:800;
 }
+.para_button_section input:hover{
+    background-color: var(--darkGrayishBlue);
+}
 .para_button_section p{
-    font-size:12px;
+    font-size:20px;
     margin-bottom: 20px;
 }
 .header__section h1{
-    font-size: 40px;
-    line-height: 34px;
+    font-size: 78px;
+    line-height: 70px;
+    
 }
 aside{
     background-color: var(--veryDarkBlue);
@@ -76,17 +80,16 @@ aside{
 .newsContainer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    justify-content: space-around;
     overflow: hidden;
     position: relative;
+    height: 100%;
     top: 10px;
-    align-items: center;
 }
-aside > h1{
+.newsContainer > h1{
     color: var(--softOrange);
     margin: 20px;
-    font-size: 35px;
+    font-size: 60px;
 }
 .main_image{
     grid-column: 1/3;
@@ -99,21 +102,20 @@ aside > h1{
     padding: 0 20px;
 }
 .text h1 {
-    font-size: 16px;
-    margin-bottom: 5px;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 .text h1:hover{
     color: var(--softOrange);
     cursor: pointer;
 }
 .text p {
-    font-size: 12px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin-bottom: 40px;
 }
 .text:not(:last-child)::after{
     display: block;
-    margin-bottom: 15px;
-    content: '____________________________';
+    content: '__________________________________________________';
     text-align: center;
     font-weight: 400;
     opacity: 40%;
@@ -144,3 +146,22 @@ align-items: center;}
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width:375px){
+    
+main{
+grid-template-columns: 1fr;  
+column-gap: 0;
+position: relative;
+right: 200px;
+}    
+aside{
+    grid-row: 2;
+    grid-column: 1;
+}
+ .main_image{
+    grid-row: 1;
+    grid-column: 1;
+ }
+}
